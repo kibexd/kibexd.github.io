@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Business Central Portal</title>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body>
+    {{ content }}
+    {% if page.url contains 'login' %}
+    <script src="/assets/js/login.js"></script>
+    {% elsif page.url contains 'portal' %}
+    <script src="/assets/js/portal.js"></script>
+    {% endif %}
+</body>
+</html>
+
+<!-- bundle exec jekyll serve -->
