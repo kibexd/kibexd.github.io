@@ -1,13 +1,21 @@
 ---
-layout: default
+layout: post
 title: Customer Portal
+custom_css: portal
+custom_js: portal
 ---
-<div class="container">
+
+<div class="portal-container">
     <div class="portal-card">
         <h1>Business Central Customer Portal</h1>
         <div id="customer-info" class="customer-info">
             <p>Loading customer information...</p>
         </div>
-        <button id="logout-btn" class="btn btn-logout">Log Out</button>
+        <div class="portal-actions">
+            <button id="view-orders" class="btn btn-primary">View Orders</button>
+            <button id="support-ticket" class="btn btn-primary">Create Support Ticket</button>
+            <button id="update-profile" class="btn btn-primary">Update Profile</button>
+            <button id="logout-btn" class="btn btn-logout">Log Out</button>
+        </div>
     </div>
 </div>

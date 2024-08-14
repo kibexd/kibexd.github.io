@@ -1,20 +1,28 @@
 ---
 layout: default
 title: Login
+custom_css: login
+custom_js: login
 ---
-<div class="container">
+
+<div class="login-container">
     <div class="login-card">
-        <h1>Business Central Portal</h1>
+        <h1>Welcome to IMS</h1>
+        <h2>Inventory Management System</h2>
         <form id="login-form" class="login-form">
-            <div class="input-group">
+            <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
             </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                </select>
             </div>
-            <button type="submit" class="btn btn-primary">Log In</button>
+            <button type="submit" class="btn btn-primary">Sign In</button>
         </form>
         <p id="login-message" class="message"></p>
     </div>
